@@ -348,8 +348,11 @@
   <h2>Start a conversation.</h2>
 
   <div class="contact-form-wrap">
-    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
       <input type="hidden" name="form-name" value="contact">
+      <p style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
       <label class="field">
         <span>Name</span>
         <input type="text" name="name" required>
