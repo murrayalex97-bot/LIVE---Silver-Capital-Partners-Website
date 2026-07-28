@@ -1,0 +1,13 @@
+:root {
+  /* The system has no corner radius and no shadows. Structure is hairlines. */
+  --radius: 0px;
+  --shadow: none;
+  --hairline: 1px;
+  --tab-underline: 3px;
+
+  /* The diamond: a square rotated 45deg. Never an SVG, never an icon font. */
+  --diamond-sm: 5px;
+  --diamond-md: 9px;
+  --diamond-lg: 15px;
+  --diamond-xl: 30px;
+}

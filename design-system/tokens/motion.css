@@ -1,0 +1,6 @@
+:root {
+  --ease: ease;
+  --dur-fast: 160ms;
+  --dur: 180ms;
+  --transition-color: color var(--dur-fast) var(--ease), background var(--dur) var(--ease), border-color var(--dur-fast) var(--ease);
+}

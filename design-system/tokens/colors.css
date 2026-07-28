@@ -1,0 +1,47 @@
+:root {
+  /* Every value below is taken from a shipped artifact — the site, the cards, or the
+     signature. Do not add a hex here that isn't used somewhere real. */
+
+  /* Ink */
+  --ink-900: #0B0D0F;   /* near-black; full-bleed hero, footer, "How we work" */
+  --ink-700: #43464A;   /* body copy on cream */
+  --ink-500: #676A65;   /* muted copy on cream — 5.4:1 */
+  --ink-400: #8FA3AB;   /* muted copy on ink — 7:1 */
+
+  /* Paper */
+  --paper: #F4F3EF;     /* warm off-white, the default page */
+  --paper-white: #FFFFFF; /* the lifted band (Capabilities) and print surfaces */
+  --paper-line: #E2E0DA;
+
+  /* Silver — the single accent, two values because no one grey clears AA on both */
+  --silver-500: #4C6570;  /* on cream — 5.3:1 */
+  --silver-300: #8FA3AB;  /* on ink — 7:1 */
+
+  /* Semantic — cream surfaces */
+  --surface-page: var(--paper);
+  --surface-raised: var(--paper-white);
+  --surface-inverse: var(--ink-900);
+  --text-heading: var(--ink-900);
+  --text-body: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-accent: var(--silver-500);
+  --rule: rgba(11, 13, 15, 0.2);
+  --rule-soft: rgba(11, 13, 15, 0.12);
+
+  /* Semantic — ink surfaces */
+  --text-heading-inverse: var(--paper);
+  --text-body-inverse: var(--paper-white);
+  --text-muted-inverse: var(--ink-400);
+  --text-accent-inverse: var(--silver-300);
+  --rule-inverse: rgba(255, 255, 255, 0.22);
+  --rule-inverse-strong: rgba(255, 255, 255, 0.32);
+
+  /* Interactive */
+  --action-solid-bg: var(--paper);       /* hero CTA: paper on ink */
+  --action-solid-fg: var(--ink-900);
+  --link-hover: var(--silver-500);
+  --focus-line: var(--silver-500);
+}
+
+/* Contrast rule: the muted grey is NOT one value. --text-muted (#676A65) on cream,
+   --text-muted-inverse (#8FA3AB) on ink. */

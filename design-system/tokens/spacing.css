@@ -1,0 +1,24 @@
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 28px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 72px;
+  --space-10: 96px;
+
+  /* Page rhythm — matches every section on the live site */
+  --gutter: clamp(24px, 6vw, 88px);
+  --section-y: clamp(64px, 9vw, 116px);
+  --section-y-hero: clamp(84px, 12vw, 164px);  /* hero bottom only */
+  --stack-gap: clamp(28px, 3.4vw, 48px);
+
+  /* Measure */
+  --measure-hero: 30ch;   /* hero h1 */
+  --measure-heading: 22ch; /* section h2 */
+  --measure-body: 56ch;
+  --measure-fine: 66ch;
+}

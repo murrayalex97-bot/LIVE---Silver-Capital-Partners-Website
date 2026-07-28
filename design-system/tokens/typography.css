@@ -1,0 +1,46 @@
+:root {
+  /* ONE STACK. Georgia and Aptos both ship with Windows and Office, so the site, the
+     business cards, Word, PowerPoint, and Excel render identically on any firm machine
+     with nothing to install. No webfonts. No monospace. */
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Aptos", Calibri, "Segoe UI", system-ui, sans-serif;
+  --font-label: var(--font-body);                                   /* eyebrows and labels */
+  --font-body-narrow: "Aptos Narrow", Calibri, "Segoe UI", sans-serif; /* Excel / models */
+
+  /* Display — Georgia. Weight 400 only, negative tracking always. */
+  --display-1-size: clamp(38px, 6.2vw, 82px);
+  --display-1-line: 1.08;
+  --display-1-track: -0.02em;
+  --display-2-size: clamp(30px, 3.8vw, 52px);
+  --display-2-line: 1.16;
+  --display-2-track: -0.02em;
+  --display-3-size: clamp(24px, 3vw, 40px);
+  --display-3-line: 1.25;
+  --display-3-track: -0.015em;
+  --display-4-size: 20px;
+  --display-4-line: 1.25;
+  --display-4-track: -0.01em;
+
+  /* Body — Aptos */
+  --body-lg-size: clamp(18px, 1.7vw, 23px);
+  --body-lg-line: 1.6;
+  --body-size: clamp(16px, 1.3vw, 18px);
+  --body-line: 1.75;
+  --body-sm-size: 14px;
+  --body-sm-line: 1.7;
+  --body-xs-size: 12px;
+  --body-xs-line: 1.8;
+
+  /* Eyebrow / label — Aptos 500, uppercase, wide tracking. Never italic, never a serif. */
+  --eyebrow-size: 11px;        /* field labels, nav, link buttons */
+  --eyebrow-size-lg: 15px;     /* section eyebrows */
+  --eyebrow-weight: 500;
+  --eyebrow-track: 0.28em;
+  --label-track: 0.18em;
+  --nav-track: 0.16em;
+  --lockup-track: 0.32em;
+  --lockup-track-wide: 0.42em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+}
