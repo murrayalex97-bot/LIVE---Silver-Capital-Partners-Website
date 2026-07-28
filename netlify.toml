@@ -1,3 +1,9 @@
+[build]
+  # This site is static — there is nothing to compile. Skip the build entirely unless a
+  # file that actually ships to the browser changed. Commits that only touch brand docs,
+  # CLAUDE.md, or the design system exit 0 and consume no build minutes.
+  ignore = "git diff --quiet HEAD^ HEAD -- index.html netlify.toml robots.txt sitemap.xml og-image.png"
+
 [[headers]]
   for = "/*"
   [headers.values]
