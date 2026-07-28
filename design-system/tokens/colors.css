@@ -17,6 +17,10 @@
   --silver-500: #4C6570;  /* on cream — 5.3:1 */
   --silver-300: #8FA3AB;  /* on ink — 7:1 */
 
+  /* The deployed site names these --slate-*. Same hexes, both names work. */
+  --slate-500: var(--silver-500);
+  --slate-300: var(--silver-300);
+
   /* Semantic — cream surfaces */
   --surface-page: var(--paper);
   --surface-raised: var(--paper-white);
@@ -39,6 +43,7 @@
   /* Interactive */
   --action-solid-bg: var(--paper);       /* hero CTA: paper on ink */
   --action-solid-fg: var(--ink-900);
+  --action-ghost-border: rgba(255, 255, 255, 0.28);  /* ghost button on ink */
   --link-hover: var(--silver-500);
   --focus-line: var(--silver-500);
 }
